@@ -1,0 +1,3 @@
+echo "<Zed> Mark current path:"
+pwd
+pwd | pbcopy

@@ -1,0 +1,5 @@
+find . -name "[pP][pP]_*" -exec mv '{}' ${cw}/pp \;
+find . -name "[rR][lL]_*" -exec mv '{}' ${cw}/rl \;
+find . -name "[dD][aA]_*" -exec mv '{}' ${cw}/da \;
+find . -name "[sS][dD]_*" -exec mv '{}' ${cw}/sd \;
+find . -name "[mM][lL][pP]_*" -exec mv '{}' ${cw}/mlp \;

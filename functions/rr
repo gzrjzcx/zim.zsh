@@ -1,0 +1,3 @@
+echo "<Zed> Back to the mark path"
+cd `pbpaste`
+pwd

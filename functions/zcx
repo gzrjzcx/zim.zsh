@@ -1,0 +1,31 @@
+case "$1" in
+
+cdfinder)	echo "go into the last launched finder path.";;
+
+gqp)	echo "git quick push all changes";;
+
+kille)	echo "kill emacs instance";;
+
+newp)	echo "create new C project, clone from git repository";;
+
+nt)		echo "set the number of threads, used for <OpenMP>";;
+
+zim)	echo "go into zim framwork directory";;
+
+repo)	echo "go into git repository directory";;
+
+cw)		echo "go into course materials directory(semetesr 2)";;
+
+r)		echo "mark current path";;
+
+rr)		echo "go back to marked path";;
+
+catt)	echo "find the contents in notebook";;
+
+mountdir)	echo "mount directory from server";;
+
+*)		ls -1 ~/.zim/modules/custom/functions
+
+esac
+
+

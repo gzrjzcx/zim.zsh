@@ -1,0 +1,46 @@
+case "$1" in
+
+cirrus)  mkdir -p $ds/cirrus
+         sshfs cirrus: $ds/cirrus -o volname=Cirrus
+         ;;
+
+umcirrus)  umount $ds/cirrus
+	       rmdir $ds/cirrus
+		   ;;
+
+dice)	mkdir -p $ds/dice
+		sshfs dice: $ds/dice -o volname=Dice
+		;;
+
+umdice)  umount $ds/dice
+		 rmdir $ds/dice
+		 ;;
+
+student)  mkdir -p $ds/student
+		  sshfs student: $ds/student -o volname=Student
+		  ;;
+
+umstudent)  umount $ds/student
+		    rmdir $ds/student
+		    ;;
+
+mlp)	mkdir -p $ds/mlp_cluster
+		sshfs cluster: $ds/mlp_cluster -o volname=MLP_Cluster
+		;;
+
+umlp)   umount $ds/mlp_cluster
+		rmdir $ds/mlp_cluster
+		;;
+
+jike)	mkdir -p $ds/jike
+		sshfs jike: $ds/jike -o volname=JIKE
+		;;
+
+umjike)   umount $ds/jike
+		rmdir $ds/jike
+		;;
+
+
+*) echo "um + dirname --> umount dir"
+
+esac

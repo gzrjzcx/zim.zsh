@@ -1,0 +1,7 @@
+case "$1" in
+
+f)	cd ~/.zim/modules/custom/functions;;
+
+*)	cd ~/.zim/modules/custom;;
+
+esac

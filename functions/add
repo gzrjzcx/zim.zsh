@@ -1,0 +1,18 @@
+case "${2}" in
+
+-g)	
+	cd ${repo}/paper_notebook
+	echo "\"`pbpaste`	--->	${1}\" has been added successfully." 
+	echo "`pbpaste`		--->	\"${1}\"  " >> README.md
+	echo "  " >> README.md
+	gqp "add new words"
+	echo "git push successfully --> git/paper_notebook"
+	dc
+	;;
+
+*)	cd ${repo}/paper_notebook
+	echo "\"`pbpaste`	--->	${1}\" has been added successfully." 
+	echo "`pbpaste`		--->	\"${1}\"  " >> README.md
+	dc
+	;;
+esac

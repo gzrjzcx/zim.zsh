@@ -1,0 +1,14 @@
+case "$1" in
+
+1)  rsync -ua --progress s1702794@mlp.inf.ed.ac.uk:/home/s1702794/temp/$2 $ds/mlp_temp
+	echo "from --- server/temp --> local/Desktop/mlp_temp ---"
+	;;
+
+2)  rsync -ua --progress $2 s1702794@mlp.inf.ed.ac.uk:/home/s1702794/temp
+	echo "from --- local/Desktop/mlp_temp --> server/temp ---" 
+	;;
+
+*)  echo "1 --> receive from server"
+	echo "2 --> send to server"
+
+esac

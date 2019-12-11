@@ -1,0 +1,17 @@
+case "$1" in
+
+leet)	cd ~/Documents/gitRepo/Leetcode;;
+
+python)	cd ~/Documents/gitRepo/python_plot;;
+
+word)	cd ~/Documents/gitRepo/paper_notebook;;
+
+city)	cd ~/Documents/gitRepo/Citybloxx_ML;;
+
+p)	cd ~/Documents/gitRepo/project_templete;;
+
+blog) cd ~/Documents/gitRepo/gzrjzcx.github.io/blog;;
+
+*)	cd ~/Documents/gitRepo;;
+
+esac

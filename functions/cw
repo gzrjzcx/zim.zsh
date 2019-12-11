@@ -1,0 +1,17 @@
+case "$1" in
+
+da) cd ~/Documents/CourseMaterials/2_semester/da;;
+
+mlp) cd ~/Documents/CourseMaterials/2_semester/mlp;;
+
+pp) cd ~/Documents/CourseMaterials/2_semester/pp;;
+
+rl) cd ~/Documents/CourseMaterials/2_semester/rl;;
+
+sd) cd ~/Documents/CourseMaterials/2_semester/sd;;
+
+ppg) cd ~/Documents/CourseMaterials/2_semester/ppg;;
+
+*) cd ~/Documents/CourseMaterials/2_semester;;
+
+esac
